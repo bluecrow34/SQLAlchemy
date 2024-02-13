@@ -34,16 +34,16 @@
     <h1>Posts</h1>
     <div class="recent_posts">
 
-    {% if post.title %}
-        
-     </div>
-     {% endif %}
-
+     {% for post in posts %}
+     <li>
+       <a href="/post/{{ post.id }}/">{{ post.title }}</a>
+      
+     </li>
+     {% endfor %}
+   </ul>
 <form>
     <button formaction="/new/post/"
             formmethod="GET">Add Post</button>
 </form>
 </div>
 </body>
-
-</html>
