@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/blog.css">
+  <title>Blogly</title>
+</head>
+
+<body> 
+<div class="row">
+<h1>Post Detail Page</h1>
+
+<div>
+    {% post.title %}
+
+    <form>
+        <button formaction="/post/{{post_id}}/edit"
+                formmethod="GET">Edit</button>
+        <button formaction="/post/{{ user.id }}/delete"
+                formmethod="POST">Delete</button>
+        <button formaction="/users/{{ user.id }}/"
+                formmethod="POST">cancel</button>
+    </form>
+   
+</div>
+
+
+</body>
+
+</html>

@@ -10,16 +10,13 @@
 </head>
 
 <body> 
-  <h1>Blogly</h1>
-  <nav role="navigation" id="nav">
-   
-    <ul>
-      <li><a class="navbar" id="navbar" href="/">Menu</a></li>
-      <li><a class="navbar" id="navbar "href="/users">User List</a></li>
-      <li><a class="navbar" id="navbar" href="/new">New User</a></li>
-    </ul>
-    </ul> 
-  </nav>
+  <h1>Create New Post</h1>
+  <form method="POST">
+    <label>Title</label><input type="text" name="title">
+    <label>Content</label><input type="text" name="content">
+    <button type="submit">Add</button>
+    <p><a class="add_new_user" href="/users">Cancel</a></p>
+  </form>
 </body>
 
 </html>

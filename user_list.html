@@ -10,16 +10,20 @@
 </head>
 
 <body> 
-  <h1>Blogly</h1>
-  <nav role="navigation" id="nav">
+<h1>User List</h1>
+
+<ul>
+  {% for user in users %}
+  <li>
+    <a href="/users/{{ user.id }}/">{{ user.full_name }}</a>
    
-    <ul>
-      <li><a class="navbar" id="navbar" href="/">Menu</a></li>
-      <li><a class="navbar" id="navbar "href="/users">User List</a></li>
-      <li><a class="navbar" id="navbar" href="/new">New User</a></li>
-    </ul>
-    </ul> 
-  </nav>
+  </li>
+  {% endfor %}
+</ul>
+
+<p><a class="add_new_user" href="/new">Add User</a></p>
+<p><a class="add_new_user" href="/">Back</a></p>
+  
 </body>
 
 </html>
