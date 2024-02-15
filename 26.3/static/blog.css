@@ -1,0 +1,48 @@
+p {
+    position: relative;
+   
+    }
+
+    
+    * {
+    top: 0;
+    border-radius: 4px;
+    font-family: helvetica;
+    background-color: rgb(96 0 255 / 29%);
+    box-shadow: 2px 3px 10px #011331;
+    }
+
+    nav {
+    position: relative;
+    float: left;
+    }
+ 
+    
+    ul li{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    width: 100%;
+    }
+
+
+
+
+      
+h1, p {
+    color:white;
+          }
+          
+       
+    ul {
+    
+    
+    margin:0px;
+    padding:0px;}
+              
+    li a {
+    display:block;
+    padding:1em;
+    text-decoration:none;
+    border-right:1px solid 
+    }
