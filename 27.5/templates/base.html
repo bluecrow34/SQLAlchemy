@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/user.css">
+  <title>Users Form</title>
+</head>
+
+<body> 
+
+  <nav class="navbar">
+      <ul>
+        <li><a href="/register">New User</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href="/secret">Secret</a></li>
+        <li><a href="/">Base</a></li>
+      </ul>
+  </nav>
+<h2>Home Page</h2>
+
+
+{% block content %}
+<h5>User List</h5>
+<ul>
+  {% for use in user %}
+  <li>
+    {{ use.username }}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
+</body>
+</html>
